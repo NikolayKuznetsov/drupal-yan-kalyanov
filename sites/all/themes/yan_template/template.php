@@ -37,11 +37,7 @@ function yan_template_page_alter($page) {
  * Preprocess variables for html.tpl.php
  */
 function yan_template_preprocess_html(&$variables) {
-	/**
-	 * Add IE8 Support
-	 */
-	drupal_add_css(path_to_theme() . '/css/ie8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => '(lt IE 9)', '!IE' => FALSE), 'preprocess' => FALSE));
-    
+
 	/**
 	* Bootstrap CDN
 	*/
@@ -59,7 +55,7 @@ function yan_template_preprocess_html(&$variables) {
 	/**
 	* Add Javascript for enable/disable scrollTop action
 	*/
-	if (theme_get_setting('scrolltop_display', 'yan_template')) {
+	/*if (theme_get_setting('scrolltop_display', 'yan_template')) {
 
 		drupal_add_js('jQuery(document).ready(function($) { 
 		$(window).scroll(function() {
@@ -76,7 +72,7 @@ function yan_template_preprocess_html(&$variables) {
 		
 		});',
 		array('type' => 'inline', 'scope' => 'header'));
-	}
+	}*/
 	//EOF:Javascript
 }
 
@@ -116,24 +112,6 @@ function yan_template_preprocess_page(&$vars) {
 		$vars['header_top_right_grid_class'] = 'col-md-12';		
 	}
 
-	/**
-	 * Add Javascript
-	 */
-	if($vars['page']['pre_header_first'] || $vars['page']['pre_header_second'] || $vars['page']['pre_header_third']) { 
-	drupal_add_js('
-	function hidePreHeader(){
-	jQuery(".toggle-control").html("<a href=\"javascript:showPreHeader()\"><span class=\"glyphicon glyphicon-plus\"></span></a>");
-	jQuery("#pre-header-inside").slideUp("fast");
-	}
-
-	function showPreHeader() {
-	jQuery(".toggle-control").html("<a href=\"javascript:hidePreHeader()\"><span class=\"glyphicon glyphicon-minus\"></span></a>");
-	jQuery("#pre-header-inside").slideDown("fast");
-	}
-	',
-	array('type' => 'inline', 'scope' => 'footer', 'weight' => 3));
-	}
-	//EOF:Javascript
 }
 
 /**

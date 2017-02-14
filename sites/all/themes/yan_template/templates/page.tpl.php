@@ -2,48 +2,6 @@
 <div id="toTop"><span class="glyphicon glyphicon-chevron-up"></span></div>
 <?php endif; ?>
 
-<?php if ($page['pre_header_first'] || $page['pre_header_second'] || $page['pre_header_third']) :?>
-<!-- #pre-header -->
-<div id="pre-header" class="clearfix">
-    <div class="container">
-
-        <!-- #pre-header-inside -->
-        <div id="pre-header-inside" class="clearfix">
-            <div class="row">
-                <div class="col-md-4">
-                    <?php if ($page['pre_header_first']):?>
-                    <div class="pre-header-area">
-                    <?php print render($page['pre_header_first']); ?>
-                    </div>
-                    <?php endif; ?>
-                </div>
-                
-                <div class="col-md-4">
-                    <?php if ($page['pre_header_second']):?>
-                    <div class="pre-header-area">
-                    <?php print render($page['pre_header_second']); ?>
-                    </div>
-                    <?php endif; ?>
-                </div>
-
-                <div class="col-md-4">
-                    <?php if ($page['pre_header_third']):?>
-                    <div class="pre-header-area">
-                    <?php print render($page['pre_header_third']); ?>
-                    </div>
-                    <?php endif; ?>
-                </div>
-            </div>
-        </div>
-        <!-- EOF: #pre-header-inside -->
-
-    </div>
-    <div class="toggle-control"><a href="javascript:showPreHeader()"><span class="glyphicon glyphicon-plus"></span></a></div>
-</div>
-<!-- EOF: #pre-header -->    
-<?php endif; ?>
-
-
 <?php if ($page['header_top_left'] || $page['header_top_right']) :?>
 <!-- #header-top -->
 <div id="header-top" class="clearfix">

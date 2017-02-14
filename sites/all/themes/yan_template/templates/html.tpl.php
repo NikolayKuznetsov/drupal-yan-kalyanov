@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
     <?php print $styles; ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <?php global $base_path; global $base_root; ?>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,9 +25,9 @@
 <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
 </div>
-<?php //print $page_top; ?>
-<?php //print $page; ?>
-<?php //print $page_bottom; ?>
+<?php print $page_top; ?>
+<?php print $page; ?>
+<?php print $page_bottom; ?>
 
 <div id="wrapper">
     <div class="container-fluid">
@@ -382,11 +385,6 @@
     </div>
 </div>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script
-    src="<?php print $base_root . $base_path . path_to_theme() ?>/js/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 <script src="<?php print $base_root . $base_path . path_to_theme() ?>/js/main.js"></script>
 
