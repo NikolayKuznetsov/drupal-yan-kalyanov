@@ -115,23 +115,6 @@ global $base_root; ?>
                     </div>
                     <?php if ($page['general_menu']) : ?>
                         <?php print render($page['general_menu']); ?>
-                        <!--                    <ul class="list-menu">-->
-                        <!--                        <li class="item-menu">-->
-                        <!--                            <a class="link-scroll" href="#block-1">Главная</a>-->
-                        <!--                        </li>-->
-                        <!--                        <li class="item-menu">-->
-                        <!--                            <a class="link-scroll" href="#block-2">Who is Ян Кальянов</a>-->
-                        <!--                        </li>-->
-                        <!--                        <li class="item-menu">-->
-                        <!--                            <a class="link-scroll" href="javascript:void(0);">Свадебный вечер</a>-->
-                        <!--                        </li>-->
-                        <!--                        <li class="item-menu">-->
-                        <!--                            <a class="link-scroll" href="javascript:void(0);">Корпоративное мероприятие</a>-->
-                        <!--                        </li>-->
-                        <!--                        <li class="item-menu">-->
-                        <!--                            <a class="link-scroll" href="#block-8">Контакты</a>-->
-                        <!--                        </li>-->
-                        <!--                    </ul>-->
                     <?php endif; ?>
                     <div class="contact-menu">
                         <div class="phone">8 (909) 099-99-00</div>
@@ -179,69 +162,18 @@ global $base_root; ?>
                 </nav>
             </div>
             <div class="page-container">
-                <!-- START block-1 -->
-                <div id="block-1" class="block block-1">
-                    <div class="content">
-                        <p class="group-arrow">
-                            <i class="icon icon-arrow-right-white"></i>
-                            <i class="icon icon-arrow-right-white"></i>
-                            <i class="icon icon-arrow-right-white"></i>
-                        </p>
-                        <h2 class="text-uppercase">Ян</h2>
-                        <h2 class="text-uppercase">кальянов</h2>
-                        <h3>Тактично. Творчески. С юмором.</h3>
-                        <div class="desc">
-                            <p>За годы работы вывел для себя одно правило: «Зрителю нужно внимание, удивление и
-                                веселье!»</p>
-                            <p>Каждое мероприятие следует трем постулатам моей работы.</p>
-                        </div>
-                        <a href="javascript:void(0);" class="btn btn-custom">Забронировать дату</a>
 
-                        <a class="button-down link-scroll" href="#block-2"></a>
-                    </div>
-                </div> <!-- END block-1 -->
+                <?php if ($page['block_header']) : ?>
+                    <!-- START block-1 -->
+                    <?php print render($page['block_header']); ?>
+                    <!-- END block-1 -->
+                <?php endif; ?>
 
-                <!-- START block-2 -->
-                <div id="block-2" class="block block-2">
-                    <div class="content">
-                        <div class="title-block">
-                            <span>Who is Ян Кальянов?</span>
-                            <i class="icon icon-arrow-blue-right"></i>
-                            <i class="icon icon-arrow-blue-right"></i>
-                            <i class="icon icon-arrow-blue-right"></i>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <ul class="menu-section">
-                                    <li class="item">
-                                        <a class="link-scroll" href="#block-3">
-                                            <i class="icon icon-microphone"></i>
-                                            <span>name link</span>
-                                        </a>
-                                    </li>
-                                    <li class="item">
-                                        <a class="link-scroll" href="#block-4">
-                                            <i class="icon icon-stemware"></i>
-                                            <span>name link</span>
-                                        </a>
-                                    </li>
-                                    <li class="item">
-                                        <a class="link-scroll" href="#block-5">
-                                            <i class="icon icon-users"></i>
-                                            <span>name link</span>
-                                        </a>
-                                    </li>
-                                    <li class="item">
-                                        <a class="link-scroll" href="#block-6">
-                                            <i class="icon icon-snowflake"></i>
-                                            <span>name link</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- END block-2 -->
+
+                <?php if ($page['block_content']) : ?>
+                    <?php print render($page['block_content']); ?>
+                <?php endif; ?>
+
 
                 <!-- START block-3 -->
                 <div id="block-3" class="block block-3">

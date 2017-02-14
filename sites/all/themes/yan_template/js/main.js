@@ -34,7 +34,7 @@ $(document).ready(function () {
         return $(result);
     }
 
-    if (come("#block-1")) {
+    if (come("#block-block-1")) {
         $('.menu-container ul.menu li').removeClass('active');
         $('.menu-container ul.menu li:nth-child(1)').addClass('active');
     }
@@ -47,15 +47,15 @@ $(document).ready(function () {
         var boxesInWindow5 = inWindow("#block-5");
         boxesInWindow5.addClass('animate-bg');
 
-        if (come("#block-1")) {
+        if (come("#block-block-1")) {
             $('.menu-container ul.menu li').removeClass('active');
             $('.menu-container ul.menu li:nth-child(1)').addClass('active');
         }
-        if (come("#block-2")) {
+        if (come("#block-block-2")) {
             $('.menu-container ul.menu li').removeClass('active');
             $('.menu-container ul.menu li:nth-child(2)').addClass('active');
         }
-        if (come("#block-8")) {
+        if (come("#block-block-8")) {
             $('.menu-container ul.menu li').removeClass('active');
             $('.menu-container ul.menu li:nth-child(5)').addClass('active');
         }
