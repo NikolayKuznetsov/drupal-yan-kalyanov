@@ -1,0 +1,35 @@
+@import "color";
+@import "mixins/mixins";
+
+.btn-custom {
+  &, &:hover, &.active, &:active {
+    background-image: url("../images/button-bg.png");
+    width: 235px;
+    height: 107px;
+    font-size: 15px;
+    line-height: 100%;
+    padding: 26px 6px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $colorWhite;
+    @include box-shadow-none();
+  }
+}
+.button-down {
+  background-image: url("../images/button-down.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 127px;
+  height: 54px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: block;
+  @include transition(all .4s ease);
+  &:hover {
+    background-image: url("../images/button-down-hover.png");
+    @include transition(all .4s ease);
+  }
+}

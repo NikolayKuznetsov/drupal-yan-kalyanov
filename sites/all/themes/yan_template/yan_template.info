@@ -7,6 +7,9 @@ core = 7.x
 stylesheets[all][] = css/style.css
 stylesheets[all][] = color/colors.css
 stylesheets[all][] = css/local.css
+stylesheets[all][] = css/bootstrap/dist/css/bootstrap.min.css
+stylesheets[all][] = scss/main.css
+stylesheets[all][] = scss/responsive.css
 
 regions[pre_header_first] = Pre Header First
 regions[pre_header_second] = Pre Header Second
@@ -35,7 +38,7 @@ settings[breadcrumb_display]= 1
 settings[scrolltop_display]= 1
 settings[responsive_respond]= 0
 settings[bootstrap_css_cdn]= 3.2.0
-; Information added by Drupal.org packaging script on 2014-10-21
+; Information added by Drupal.org packaging script on 2017-02-01
 version = "7.x-1.1"
 core = "7.x"
 project = "yan_template"
