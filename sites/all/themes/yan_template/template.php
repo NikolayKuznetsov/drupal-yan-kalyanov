@@ -51,40 +51,8 @@ function yan_template_preprocess_html(&$variables) {
         $cdn = '//maxcdn.bootstrapcdn.com/bootstrap/' . theme_get_setting('bootstrap_js_cdn', 'yan_template')  . '/js/bootstrap.min.js';
         drupal_add_js($cdn, array('type' => 'external'));
     }
-	
-	/**
-	* Add Javascript for enable/disable scrollTop action
-	*/
-	/*if (theme_get_setting('scrolltop_display', 'yan_template')) {
-
-		drupal_add_js('jQuery(document).ready(function($) { 
-		$(window).scroll(function() {
-			if($(this).scrollTop() != 0) {
-				$("#toTop").fadeIn();	
-			} else {
-				$("#toTop").fadeOut();
-			}
-		});
-		
-		$("#toTop").click(function() {
-			$("body,html").animate({scrollTop:0},800);
-		});	
-		
-		});',
-		array('type' => 'inline', 'scope' => 'header'));
-	}*/
-	//EOF:Javascript
 }
 
-/**
- * Override or insert variables into the html template.
- */
-function yan_template_process_html(&$vars) {
-	// Hook into color.module
-	if (module_exists('color')) {
-	_color_html_alter($vars);
-	}
-}
 
 /**
  * Preprocess variables for page template.
@@ -112,16 +80,6 @@ function yan_template_preprocess_page(&$vars) {
 		$vars['header_top_right_grid_class'] = 'col-md-12';		
 	}
 
-}
-
-/**
- * Override or insert variables into the page template.
- */
-function yan_template_process_page(&$variables) {
-  // Hook into color.module.
-  if (module_exists('color')) {
-    _color_page_alter($variables);
-  }
 }
 
 /**

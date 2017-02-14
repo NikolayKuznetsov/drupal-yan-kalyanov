@@ -5,7 +5,6 @@ version = VERSION
 core = 7.x
 
 stylesheets[all][] = css/style.css
-stylesheets[all][] = color/colors.css
 stylesheets[all][] = css/local.css
 
 stylesheets[all][] = scss/main.css
@@ -14,6 +13,7 @@ stylesheets[all][] = scss/responsive.css
 regions[header_top_left] = Header Top Left
 regions[header_top_right] = Header Top Right
 regions[header] = Header
+regions[general_menu] = General Menu
 regions[navigation] = Navigation
 regions[banner] = Banner
 regions[highlighted] = Highlighted

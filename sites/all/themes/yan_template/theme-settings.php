@@ -8,80 +8,49 @@
  *   The form state.
  */
 function yan_template_form_system_theme_settings_alter(&$form, &$form_state) {
-    
-    $form['mtt_settings'] = array(
+
+    /* Social links */
+    $form['yan_template'] = array(
         '#type' => 'fieldset',
-        '#title' => t('Bootstrap Business Theme Settings'),
+        '#title' => t('Settings social link'),
         '#collapsible' => FALSE,
         '#collapsed' => FALSE,
     );
-
-    $form['mtt_settings']['tabs'] = array(
-        '#type' => 'vertical_tabs',
-    );
-
-    $form['mtt_settings']['tabs']['basic_settings'] = array(
+    $form['yan_template']['socialicon'] = array(
         '#type' => 'fieldset',
-        '#title' => t('Basic Settings'),
-        '#collapsible' => TRUE,
-        '#collapsed' => TRUE,
-    );
-
-    $form['mtt_settings']['tabs']['basic_settings']['breadcrumb_display'] = array(
-        '#type' => 'checkbox',
-        '#title' => t('Show breadcrumb'),
-        '#description'   => t('Use the checkbox to enable or disable the breadcrumb.'),
-        '#default_value' => theme_get_setting('breadcrumb_display','yan_template'),
-    );
-
-    $form['mtt_settings']['tabs']['basic_settings']['scrolltop_display'] = array(
-        '#type' => 'checkbox',
-        '#title' => t('Show scroll-to-top button'),
-        '#description'   => t('Use the checkbox to enable or disable scroll-to-top button.'),
-        '#default_value' => theme_get_setting('scrolltop_display', 'yan_template'),
-        '#collapsible' => TRUE,
-        '#collapsed' => TRUE,
-    );
-
-    $form['mtt_settings']['tabs']['bootstrap_cdn'] = array(
-        '#type' => 'fieldset',
-        '#title' => t('BootstrapCDN'),
-        '#group' => 'bootstrap',
-    );
-    
-    $form['mtt_settings']['tabs']['bootstrap_cdn']['bootstrap_css_cdn'] = array(
-        '#type' => 'select',
-        '#title' => t('BootstrapCDN Complete CSS version'),
-        '#options' => drupal_map_assoc(array(
-          '3.2.0',
-        )),
-        '#default_value' => theme_get_setting('bootstrap_css_cdn'),
-        '#empty_value' => NULL,
-    );
-    
-    $form['mtt_settings']['tabs']['bootstrap_cdn']['bootstrap_js_cdn'] = array(
-        '#type' => 'select',
-        '#title' => t('BootstrapCDN Complete JavaScript version'),
-        '#options' => drupal_map_assoc(array(
-          '3.2.0',
-        )),
-        '#default_value' => theme_get_setting('bootstrap_js_cdn'),
-        '#empty_option' => t('Disabled'),
-        '#empty_value' => NULL,
-    );
-
-    $form['mtt_settings']['tabs']['ie8_support'] = array(
-        '#type' => 'fieldset',
-        '#title' => t('IE8 support'),
+        '#title' => t('Social Icons'),
         '#collapsible' => TRUE,
         '#collapsed' => FALSE,
     );
-
-    $form['mtt_settings']['tabs']['ie8_support']['responsive_respond'] = array(
+    $form['yan_template']['socialicon']['socialicon_display'] = array(
         '#type' => 'checkbox',
-        '#title' => t('Add Respond.js [<em>bootstrap-business/js/respond.min.js</em>] JavaScript to add basic CSS3 media query support to IE 6-8.'),
-        '#default_value' => theme_get_setting('responsive_respond','yan_template'),
-        '#description'   => t('IE 6-8 require a JavaScript polyfill solution to add basic support of CSS3 media queries. Note that you should enable <strong>Aggregate and compress CSS files</strong> through <em>/admin/config/development/performance</em>.'),
+        '#title' => t('Show Social Icon'),
+        '#default_value' => theme_get_setting('socialicon_display', 'yan_template'),
+        '#description'   => t("Check this option to show Social Icons. Uncheck to hide."),
     );
-    
+    $form['yan_template']['socialicon']['vk_url'] = array(
+        '#type' => 'textfield',
+        '#title' => t('VK Profile URL'),
+        '#default_value' => theme_get_setting('vk_url', 'yan_template'),
+        '#description'   => t("Enter your VK Profile URL. Leave blank to hide."),
+    );
+    $form['yan_template']['socialicon']['facebook_url'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Facebook Profile URL'),
+        '#default_value' => theme_get_setting('facebook_url', 'yan_template'),
+        '#description'   => t("Enter your Facebook Profile URL. Leave blank to hide."),
+    );
+    $form['yan_template']['socialicon']['instagram_url'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Instagram Profile URL'),
+        '#default_value' => theme_get_setting('instagram_url', 'yan_template'),
+        '#description'   => t("Enter your Instagram Profile URL. Leave blank to hide."),
+    );
+    $form['yan_template']['socialicon']['youtube_url'] = array(
+        '#type' => 'textfield',
+        '#title' => t('youtube Profile URL'),
+        '#default_value' => theme_get_setting('youtube_url', 'yan_template'),
+        '#description'   => t("Enter your youtube Profile URL. Leave blank to hide."),
+    );
+
 }

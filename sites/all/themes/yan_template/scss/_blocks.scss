@@ -1,6 +1,12 @@
 @import "color";
 @import "mixins/mixins";
 
+.block-menu {
+  h2 {
+    display: none;
+  }
+}
+
 /* block Главная */
 .block-1 {
   background-image: url("../images/block-1-bg.jpg");
