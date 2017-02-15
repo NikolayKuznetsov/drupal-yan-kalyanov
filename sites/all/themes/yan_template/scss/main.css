@@ -987,6 +987,25 @@ form .form-item {
 /* block ╨Æ╨╡╨┤╤â╤ë╨╕╨╣ Event-Fm */
 .block-3 .desc {
   margin-bottom: 70px; }
+.block-3 .slider-block .item-slide a:before {
+  content: '';
+  background-image: url("../images/icon-slider-btn-play.png");
+  width: 153px;
+  height: 153px;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transform: scale(0.425);
+  -khtml-transform: scale(0.425);
+  -moz-transform: scale(0.425);
+  -ms-transform: scale(0.425);
+  -o-transform: scale(0.425);
+  transform: scale(0.425); }
 
 /* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
 .block-4 {
