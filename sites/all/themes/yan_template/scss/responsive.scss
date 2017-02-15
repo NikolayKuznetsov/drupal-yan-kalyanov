@@ -311,6 +311,28 @@
 @media (max-width: 860px) {
   .menu-container {
     width: 52px;
+    .logo-container {
+      height: 150px;
+      .logo-min, .logo {
+        top: 30px;
+      }
+    }
+    ul {
+      &.menu {
+        li {
+          padding: 12px 0;
+          a {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+    .contact-menu {
+      &:after {
+        top: auto;
+        bottom: 21px;
+      }
+    }
     &:hover {
       width: 52px;
       .logo {
@@ -324,8 +346,9 @@
         }
       }
       ul {
-        &.list-menu {
+        &.menu {
           li {
+            padding: 12px 0;
             &:after {
               visibility: visible;
               opacity: 1;
@@ -344,17 +367,16 @@
                 background-color: $colorWhite;
               }
             }
-            &.item-menu {
-              a {
-                visibility: hidden;
-                font-size: 0;
-              }
+            a {
+              visibility: hidden;
+              font-size: 19px;
             }
           }
         }
       }
       .contact-menu {
         background-color: $colorWhite;
+        height: 135px;
         > * {
           visibility: hidden;
           opacity: 0;
@@ -365,6 +387,10 @@
         }
         &:before {
           visibility: hidden;
+        }
+        .phone {
+          font-size: 21px;
+          margin: 15px 0;
         }
       }
     }
@@ -385,7 +411,7 @@
         }
       }
       ul {
-        &.list-menu {
+        &.menu {
           li {
             &:before {
               content: '';
@@ -402,26 +428,24 @@
               visibility: hidden;
               opacity: 0;
             }
-            &.item-menu {
-              a {
-                font-size: 19px;
-                line-height: 100%;
-                color: $colorDarkGray;
-                text-decoration: none;
-                text-transform: uppercase;
-                visibility: visible;
-                @include transition(color .4s ease .2s);
-                @include transition(visibility .4s ease .2s);
+            a {
+              font-size: 19px;
+              line-height: 100%;
+              color: $colorDarkGray;
+              text-decoration: none;
+              text-transform: uppercase;
+              visibility: visible;
+              @include transition(color .4s ease .2s);
+              @include transition(visibility .4s ease .2s);
+            }
+            &.active, &:hover {
+              &:before {
+                background-color: $colorWhiteSmoke;
+                @include transition(background-color .4s ease);
               }
-              &.active, &:hover {
-                &:before {
-                  background-color: $colorWhiteSmoke;
-                  @include transition(background-color .4s ease);
-                }
-                a {
-                  color: $colorBlack;
-                  @include transition(color .4s ease);
-                }
+              a {
+                color: $colorBlack;
+                @include transition(color .4s ease);
               }
             }
           }
@@ -465,8 +489,13 @@
 
   .block-1 {
     h2 {
-      font-size: 48px;
-      line-height: 46px;
+      font-size: 42px;
+      line-height: 40px;
+    }
+    h3 {
+      font-size: 28px;
+      line-height: 32px;
+      margin: 15px 0;
     }
     p {
       font-size: 16px;
@@ -480,16 +509,23 @@
   .block-2 {
     background-image: none;
     height: inherit;
-    padding-bottom: 24px;
+    padding-bottom: 0;
     ul {
       &.menu-section {
         margin: 12px auto !important;
         float: none;
         li {
-          width: 100%;
+          width: 50%;
+          height: 130px;
+          float: left;
+          margin: 0;
+          padding: 0 8px 0 4px;
           a {
             width: 100%;
             height: 98px;
+            &:hover {
+              height: 130px;
+            }
           }
         }
       }
@@ -514,8 +550,13 @@
 
   .block-7 {
     height: inherit;
-    .form {
+    .block {
+      padding: 0;
+    }
+    .form, .desc {
       padding: 0 24px;
+    }
+    .form {
       .field-item {
         width: 100%;
         input, textarea {
@@ -572,10 +613,19 @@
     .title {
       .icon-block {
         float: none;
+        margin: 0 auto;
       }
       .value {
-        font-size: 24px;
+        margin-top: 5px;
+        font-size: 22px;
+        line-height: 150%;
+        text-align: center;
       }
+    }
+  }
+  .block-3, .block-5 {
+    .title {
+      margin-bottom: 12px;
     }
   }
 
