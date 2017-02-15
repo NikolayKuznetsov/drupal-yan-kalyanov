@@ -117,8 +117,22 @@ global $base_root; ?>
                         <?php print render($page['general_menu']); ?>
                     <?php endif; ?>
                     <div class="contact-menu">
-                        <div class="phone">8 (909) 099-99-00</div>
-                        <div class="email">yan-event@ya.ru</div>
+                        <?php
+                            $emailContact = check_plain(theme_get_setting('email'));
+                            $phoneContact = check_plain(theme_get_setting('phone'));
+                        ?>
+                        <?php if ($phoneContact): ?>
+                            <div class="phone">
+                                <?php print $phoneContact; ?>
+                            </div>
+                        <?php endif; ?>
+                        <?php if ($phoneContact): ?>
+                            <div class="email">
+                                <a href="mailto:<?php print $emailContact; ?>">
+                                    <?php print $emailContact; ?>
+                                </a>
+                            </div>
+                        <?php endif; ?>
 
                         <?php if (theme_get_setting('socialicon_display', 'yan_template')): ?>
                             <?php

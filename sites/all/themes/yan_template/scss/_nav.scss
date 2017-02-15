@@ -210,10 +210,16 @@
       font-size: 24px;
       color: $colorBlack;
       margin: 36px 0 15px;
+      a {
+        color: $colorBlack;
+      }
     }
     .email {
       font-size: 19px;
       color: $colorSuvaGrey;
+      a {
+        color: $colorSuvaGrey;
+      }
     }
     ul {
       list-style: none;

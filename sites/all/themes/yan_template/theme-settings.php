@@ -9,6 +9,21 @@
  */
 function yan_template_form_system_theme_settings_alter(&$form, &$form_state) {
 
+    /* Contacts info */
+
+    $form['email'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Email'),
+        '#default_value'  => theme_get_setting('email'),
+        '#description'   => t("Enter your Email. Leave blank to hide."),
+    );
+    $form['phone'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Phone'),
+        '#default_value'  => theme_get_setting('phone'),
+        '#description'   => t("Enter your Phone. Leave blank to hide."),
+    );
+
     /* Social links */
     $form['yan_template'] = array(
         '#type' => 'fieldset',
