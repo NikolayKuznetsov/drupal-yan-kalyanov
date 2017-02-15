@@ -1,6 +1,18 @@
 $(document).ready(function () {
 
-    $('.link-scroll').click(function () { // ловим клик по ссылке с классом go_to
+    var _href = '';
+    if ($('body').hasClass('front')) {
+        _href = $('ul.menu li:nth-child(1) a').attr('href');
+        $('ul.menu li:nth-child(1) a').attr("href", _href.substr(1));
+
+        _href = $('ul.menu li:nth-child(2) a').attr('href');
+        $('ul.menu li:nth-child(2) a').attr("href", _href.substr(1));
+
+        _href = $('ul.menu li:nth-child(5) a').attr('href');
+        $('ul.menu li:nth-child(5) a').attr("href", _href.substr(1));
+    }
+
+    $('.link-scroll, ul.menu li a').click(function () { // ловим клик по ссылке с классом go_to
         var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
         if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
             $('html, body').animate({scrollTop: $(scroll_el).offset().top}, 600); // анимируем скроолинг к элементу scroll_el
@@ -110,7 +122,7 @@ $(document).ready(function () {
     function closeSuccessFormPopup() {
         var btnSuccessFormPopup = $('.success_form_popup .close-request-popup');
 
-        btnSuccessFormPopup.on('click', function(e){
+        btnSuccessFormPopup.on('click', function (e) {
             noneEventLink(e);
             var redirect = '/';
             history.pushState('', '', redirect);
@@ -121,7 +133,7 @@ $(document).ready(function () {
     function eventLearnCreativeIdeas() {
         var btnLearnCreativeIdeas = $('.learn-creative-ideas');
 
-        btnLearnCreativeIdeas.on('click', function(e){
+        btnLearnCreativeIdeas.on('click', function (e) {
             noneEventLink(e);
             $('#modal-form-learn-creative-ideas .container-popup').addClass('open');
         });
@@ -135,10 +147,10 @@ $(document).ready(function () {
     }
 });
 
-document.onkeydown = function(e) {
+document.onkeydown = function (e) {
     var successFormPopup = $('.success_form_popup');
     if (e.keyCode == 27) {
-        if(successFormPopup.hasClass('open')) {
+        if (successFormPopup.hasClass('open')) {
             var redirect = '/';
             history.pushState('', '', redirect);
             successFormPopup.removeClass('open');
