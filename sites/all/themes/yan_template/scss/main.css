@@ -678,6 +678,9 @@ a, a:hover {
   -ms-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none; }
+.btn-custom:focus {
+  color: #FFFFFF;
+  outline: none; }
 
 .button-down {
   background-image: url("../images/button-down.png");
