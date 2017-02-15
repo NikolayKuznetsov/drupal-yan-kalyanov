@@ -45,7 +45,7 @@ $(document).ready(function () {
             var boxesInWindow3 = inWindow("#block-block-3");
             boxesInWindow3.addClass('animate-bg');
 
-            var boxesInWindow5 = inWindow("#block-block-3");
+            var boxesInWindow5 = inWindow("#block-block-5");
             boxesInWindow5.addClass('animate-bg');
 
             if (come("#block-block-1")) {

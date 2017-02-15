@@ -24,6 +24,21 @@ function yan_template_form_system_theme_settings_alter(&$form, &$form_state) {
         '#description'   => t("Enter your Phone. Leave blank to hide."),
     );
 
+    $form['name_contact'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Name contact'),
+        '#default_value'  => theme_get_setting('name_contact'),
+        '#description'   => t("Enter your Name contact. Leave blank to hide."),
+    );
+
+    $form['desc_contact'] = array(
+        '#type' => 'text_format',
+        '#title' => t('Description contact'),
+        '#default_value' => theme_get_setting('desc_contact')['value'],
+        '#format' =>  theme_get_setting('desc_contact')['format'],
+        '#description'   => t("Enter your Description contact. Leave blank to hide."),
+    );
+
     /* Social links */
     $form['yan_template'] = array(
         '#type' => 'fieldset',

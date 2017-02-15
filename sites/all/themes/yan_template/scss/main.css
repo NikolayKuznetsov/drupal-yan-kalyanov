@@ -805,6 +805,9 @@ form .form-item {
   .slick-next:before {
     background-image: url("../images/icon-slider-next.png"); }
 
+.front #page {
+  display: none; }
+
 .block-menu h2 {
   display: none; }
 
@@ -1011,6 +1014,7 @@ form .form-item {
   background-image: url("../images/block-8-bg.jpg");
   background-repeat: no-repeat;
   background-position: left center;
+  background-size: cover;
   background-color: #161616;
   min-height: 768px;
   overflow: hidden; }
@@ -1040,9 +1044,13 @@ form .form-item {
       font-size: 24px;
       color: #FFFFFF;
       margin: 45px 0 10px 0; }
+      .block-8 .contacts .phone a {
+        color: #FFFFFF; }
     .block-8 .contacts .email {
       font-size: 19px;
       color: #939393; }
+      .block-8 .contacts .email a {
+        color: #939393; }
   .block-8 .block-text-icon {
     margin-bottom: 7px; }
     .block-8 .block-text-icon .icon {

@@ -1,6 +1,11 @@
 @import "color";
 @import "mixins/mixins";
 
+.front {
+  #page {
+    display: none;
+  }
+}
 .block-menu {
   h2 {
     display: none;
@@ -208,6 +213,7 @@
   background-image: url("../images/block-8-bg.jpg");
   background-repeat: no-repeat;
   background-position: left center;
+  background-size: cover;
   background-color: $coloNero;
   min-height: 768px;
   overflow: hidden;
@@ -243,10 +249,16 @@
       font-size: 24px;
       color: $colorWhite;
       margin: 45px 0 10px 0;
+      a {
+        color: $colorWhite;
+      }
     }
     .email {
       font-size: 19px;
       color: $colorSuvaGrey;
+      a {
+        color: $colorSuvaGrey;
+      }
     }
   }
   .block-text-icon {
