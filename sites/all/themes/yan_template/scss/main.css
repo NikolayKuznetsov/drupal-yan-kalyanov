@@ -1373,6 +1373,55 @@ form .form-item {
     float: left;
     margin: 20px 0; }
 
+.success_form_popup {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.65);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  -khtml-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .success_form_popup.open {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.4s ease;
+    -khtml-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+  .success_form_popup .success_form_popup_content {
+    width: 300px;
+    height: 240px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+    .success_form_popup .success_form_popup_content .text p {
+      font-size: 21px;
+      line-height: 125%;
+      margin-bottom: 24px;
+      text-align: center; }
+    .success_form_popup .success_form_popup_content .btn-custom {
+      height: 64px;
+      margin: 0; }
+
 body {
   font-family: 'Roboto Condensed', sans-serif; }
 

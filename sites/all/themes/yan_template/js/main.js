@@ -84,6 +84,7 @@ $(document).ready(function () {
     });
 
     eventDatePicka();
+    closeSuccessFormPopup();
 
     function eventDatePicka() {
         var elementNameDatePicker = $('#edit-submitted-data');
@@ -104,4 +105,33 @@ $(document).ready(function () {
             selectMonths: true
         });
     }
+
+    function closeSuccessFormPopup() {
+        var btnSuccessFormPopup = $('.success_form_popup .close-request-popup');
+
+        btnSuccessFormPopup.on('click', function(e){
+            noneEventLink(e);
+            var redirect = '/';
+            history.pushState('', '', redirect);
+            $(this).closest('.success_form_popup').removeClass('open');
+        });
+    }
+
+
+    function noneEventLink(e) {
+        var event = e || window.event;
+        event.preventDefault();
+
+    }
 });
+
+document.onkeydown = function(e) {
+    var successFormPopup = $('.success_form_popup');
+    if (e.keyCode == 27) {
+        if(successFormPopup.hasClass('open')) {
+            var redirect = '/';
+            history.pushState('', '', redirect);
+            successFormPopup.removeClass('open');
+        }
+    }
+};

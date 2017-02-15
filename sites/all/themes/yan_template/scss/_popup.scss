@@ -1,0 +1,45 @@
+@import "color";
+@import "mixins/mixins";
+
+.success_form_popup {
+  position: fixed;
+  background-color: rgba(255,255,255,.65);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  visibility: hidden;
+  opacity: 0;
+  @include transition(all .4s ease);
+  &.open {
+    visibility: visible;
+    opacity: 1;
+    @include transition(all .4s ease);
+  }
+
+  .success_form_popup_content {
+    width: 300px;
+    height: 240px;
+    padding: 20px;
+    background-color: $colorWhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include absolute-center();
+    .text {
+      p {
+        font-size: 21px;
+        line-height: 125%;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+    }
+    .btn-custom {
+      height: 64px;
+      margin: 0;
+    }
+  }
+
+}

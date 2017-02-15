@@ -414,3 +414,19 @@ global $base_root; ?>
 </footer>
 <!-- EOF:#subfooter -->
 <?php endif; ?>
+
+<?php if ($success): ?>
+    <div class="success_form_popup open">
+        <div class="success_form_popup_content">
+            <div class="text">
+                <p>Ваш запрос успешно отправлен</p>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#" class="btn btn-custom close-request-popup">Ok</a>
+                </div>
+            </div>
+        </div>
+        <div class="success_form_popup_bg"></div>
+    </div>
+<?php endif; ?>

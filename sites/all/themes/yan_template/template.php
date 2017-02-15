@@ -59,6 +59,13 @@ function yan_template_preprocess_html(&$variables) {
  */
 function yan_template_preprocess_page(&$vars) {
 
+
+    $vars['success'] = FALSE;
+    if (isset($_GET['success']) && ($_GET['success'] == 'true')) {
+        $vars['success'] = TRUE;
+    }
+
+
 	/**
 	 * insert variables into page template.
 	 */
