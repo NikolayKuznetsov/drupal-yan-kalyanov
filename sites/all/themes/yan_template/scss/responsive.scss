@@ -103,14 +103,12 @@
   .block-7 {
     min-height: inherit;
     height: 100vh;
-    .title-block, .form {
+    .title-block, .form, .desc {
       padding-left: 115px;
     }
-    .form {
-      .desc {
-        margin-bottom: 25px;
-        margin-top: 25px;
-      }
+    .desc {
+      margin-bottom: 25px;
+      margin-top: 25px;
     }
   }
 
@@ -151,7 +149,7 @@
 
   .block-7 {
     background-position: 40% center;
-    .title-block, .form {
+    .title-block, .form, .desc {
       padding-left: 65px;
     }
   }
@@ -514,7 +512,7 @@
         }
       }
       .action-form {
-        .submit {
+        &.submit, &.form-submit {
           margin: 0 auto;
           display: block;
         }
@@ -571,7 +569,7 @@
 
   form {
     input {
-      &.submit {
+      &.submit, &.form-submit {
         background-image: url("../images/button-bg.png");
         width: 235px;
         height: 107px;

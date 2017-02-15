@@ -12,6 +12,13 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <?php global $base_path; global $base_root; ?>
 
+    <!-- start picer date -->
+    <script src="<?php print $base_root . $base_path . path_to_theme() ?>/js/pickadate/picker.js"></script>
+    <script src="<?php print $base_root . $base_path . path_to_theme() ?>/js/pickadate/picker.date.js"></script>
+    <link rel="stylesheet" href="<?php print $base_root . $base_path . path_to_theme() ?>/js/pickadate/themes/default.css"/>
+    <link rel="stylesheet" href="<?php print $base_root . $base_path . path_to_theme() ?>/js/pickadate/themes/default.date.css"/>
+    <!-- .end picer date -->
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

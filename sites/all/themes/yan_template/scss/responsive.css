@@ -68,9 +68,9 @@
   .block-7 {
     min-height: inherit;
     height: 100vh; }
-    .block-7 .title-block, .block-7 .form {
+    .block-7 .title-block, .block-7 .form, .block-7 .desc {
       padding-left: 115px; }
-    .block-7 .form .desc {
+    .block-7 .desc {
       margin-bottom: 25px;
       margin-top: 25px; }
 
@@ -97,7 +97,7 @@
 
   .block-7 {
     background-position: 40% center; }
-    .block-7 .title-block, .block-7 .form {
+    .block-7 .title-block, .block-7 .form, .block-7 .desc {
       padding-left: 65px; }
 
   .block-8 .title-block {
@@ -392,7 +392,7 @@
         width: 100%; }
         .block-7 .form .field-item input, .block-7 .form .field-item textarea {
           width: 100%; }
-      .block-7 .form .action-form .submit {
+      .block-7 .form .action-form.submit, .block-7 .form .action-form.form-submit {
         margin: 0 auto;
         display: block; }
 
@@ -424,7 +424,7 @@
   .block-3 .title .value, .block-4 .title .value, .block-5 .title .value, .block-6 .title .value {
     font-size: 24px; }
 
-  form input.submit {
+  form input.submit, form input.form-submit {
     background-image: url("../images/button-bg.png");
     width: 235px;
     height: 107px; } }

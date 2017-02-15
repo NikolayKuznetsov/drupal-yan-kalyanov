@@ -673,7 +673,7 @@ form input.field-date {
   background-repeat: no-repeat;
   background-position: right center;
   float: left; }
-form input.submit {
+form input.submit, form input.form-submit {
   background-color: transparent;
   background-image: url("../images/button-submit-bg.png");
   border: none;
@@ -705,6 +705,8 @@ form textarea.field-long-text {
   form input.field-text:focus,
   form input.field-date:focus,
   form textarea.field-long-text:focus {
+    background-color: #303030;
+    color: #FFFFFF;
     -webkit-box-shadow: none;
     -khtml-box-shadow: none;
     -moz-box-shadow: none;
@@ -714,6 +716,13 @@ form textarea.field-long-text {
 form input.field-text,
 form textarea.field-long-text {
   margin-bottom: 16px; }
+form .grippie {
+  display: none !important; }
+form .form-item {
+  margin: 0; }
+
+#node-10 .webform-client-form {
+  max-width: 396px; }
 
 .slick-slider {
   max-width: 670px; }
@@ -971,6 +980,7 @@ form textarea.field-long-text {
   background-image: url("../images/block-7-bg.jpg");
   background-repeat: no-repeat;
   background-position: right center;
+  background-size: cover;
   background-color: #161616;
   min-height: 768px; }
   .block-7 .title-block {
@@ -980,20 +990,22 @@ form textarea.field-long-text {
     float: left !important; }
     .block-7 .title-block .icon {
       float: right; }
-  .block-7 .form {
+  .block-7 .desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 100%;
+    margin-bottom: 64px;
+    margin-top: 30px;
+    float: left; }
+    .block-7 .desc p {
+      max-width: 400px; }
+  .block-7 .form, .block-7 .desc {
     padding-left: 230px; }
-    .block-7 .form .field-item {
-      width: 396px; }
-    .block-7 .form .desc {
-      font-size: 16px;
-      line-height: 24px;
-      color: #FFFFFF;
-      width: 100%;
-      margin-bottom: 64px;
-      margin-top: 30px;
-      float: left; }
-      .block-7 .form .desc p {
-        max-width: 400px; }
+  .block-7 .form h2 {
+    display: none; }
+  .block-7 .form .field-item {
+    width: 396px; }
 
 .block-8 {
   background-image: url("../images/block-8-bg.jpg");

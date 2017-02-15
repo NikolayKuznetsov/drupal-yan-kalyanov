@@ -13,7 +13,7 @@ form {
       background-position: right center;
       float: left;
     }
-    &.submit {
+    &.submit, &.form-submit {
       background-color: transparent;
       background-image: url("../images/button-submit-bg.png");
       border: none;
@@ -49,6 +49,8 @@ form {
     text-transform: uppercase;
     outline: none;
     &:focus {
+      background-color: $colorNightRider;
+      color: $colorWhite;
       @include box-shadow-none();
     }
   }
@@ -57,4 +59,14 @@ form {
     margin-bottom: 16px;
   }
 
+  .grippie {
+    display: none !important;
+  }
+  .form-item {
+    margin: 0;
+  }
+}
+
+#node-10 .webform-client-form {
+  max-width: 396px;
 }
