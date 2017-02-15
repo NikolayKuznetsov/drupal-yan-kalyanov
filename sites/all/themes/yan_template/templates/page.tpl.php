@@ -431,21 +431,20 @@ global $base_root; ?>
     </div>
 <?php endif; ?>
 
-<!--
-<div id="modal-ep">
+
+<div id="modal-form-learn-creative-ideas">
     <div class="container-popup">
         <div class="container-popup-content">
             <div class="link-close">
                 <a class="close-popup" href="#"><i class="icon icon-close"></i></a>
             </div>
             <?php
-//            $block = block_load('webform', 'client-block-61');
-//            $block_content = _block_render_blocks(array($block));
-//            $build = _block_get_renderable_array($block_content);
-//            print drupal_render($build);
+                $block = block_load('webform', 'client-block-11');
+                $block_content = _block_render_blocks(array($block));
+                $build = _block_get_renderable_array($block_content);
+                print drupal_render($build);
             ?>
         </div>
         <div class="container-popup-bg"></div>
     </div>
 </div>
--->

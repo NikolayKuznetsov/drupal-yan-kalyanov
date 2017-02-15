@@ -48,6 +48,7 @@ form {
     color: $colorWhite;
     text-transform: uppercase;
     outline: none;
+    @include border-radius(0px);
     &:focus {
       background-color: $colorNightRider;
       color: $colorWhite;
@@ -59,9 +60,10 @@ form {
     margin-bottom: 16px;
   }
 
-  .grippie {
+  .grippie, .ajax-progress {
     display: none !important;
   }
+
   .form-item {
     margin: 0;
   }

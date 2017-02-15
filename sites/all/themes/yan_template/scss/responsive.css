@@ -175,7 +175,15 @@
   .block-8 .row .col-md-5 {
     display: none; }
   .block-8 .row .col-md-7 {
-    float: right; } }
+    float: right; }
+
+  .container-popup .container-popup-content {
+    width: 100%;
+    height: 100%; }
+    .container-popup .container-popup-content input, .container-popup .container-popup-content textarea {
+      width: 100%; }
+    .container-popup .container-popup-content .form-submit {
+      width: 235px !important; } }
 @media (max-width: 860px) {
   .menu-container {
     width: 52px; }
@@ -365,7 +373,8 @@
     height: inherit;
     padding-bottom: 24px; }
     .block-2 ul.menu-section {
-      margin: 0 30px 0 20px; }
+      margin: 12px auto !important;
+      float: none; }
       .block-2 ul.menu-section li {
         width: 100%; }
         .block-2 ul.menu-section li a {
@@ -380,9 +389,6 @@
     .block-4 .row .col-md-6:last-child, .block-6 .row .col-md-6:last-child {
       width: 100%;
       float: right; }
-
-  .block-5 {
-    overflow: visible; }
 
   .block-7 {
     height: inherit; }
@@ -402,7 +408,8 @@
   .block-4, .block-6, .block-7, .block-8 {
     background-image: none;
     min-height: inherit;
-    padding-bottom: 24px; }
+    padding-bottom: 24px;
+    overflow: hidden; }
     .block-4 .desc, .block-6 .desc, .block-7 .desc, .block-8 .desc {
       width: 100%;
       max-width: inherit; }
@@ -427,7 +434,10 @@
   form input.submit, form input.form-submit {
     background-image: url("../images/button-bg.png");
     width: 235px;
-    height: 107px; } }
+    height: 107px;
+    margin: 0 auto;
+    float: none;
+    display: block; } }
 @media (max-width: 640px) {
   .block-3 .slider-block, .block-5 .slider-block {
     display: none; } }

@@ -85,6 +85,7 @@ $(document).ready(function () {
 
     eventDatePicka();
     closeSuccessFormPopup();
+    eventLearnCreativeIdeas();
 
     function eventDatePicka() {
         var elementNameDatePicker = $('#edit-submitted-data');
@@ -114,6 +115,15 @@ $(document).ready(function () {
             var redirect = '/';
             history.pushState('', '', redirect);
             $(this).closest('.success_form_popup').removeClass('open');
+        });
+    }
+
+    function eventLearnCreativeIdeas() {
+        var btnLearnCreativeIdeas = $('.learn-creative-ideas');
+
+        btnLearnCreativeIdeas.on('click', function(e){
+            noneEventLink(e);
+            $('#modal-form-learn-creative-ideas .container-popup').addClass('open');
         });
     }
 
