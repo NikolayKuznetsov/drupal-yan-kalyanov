@@ -50,8 +50,10 @@
           a {
             color: $colorDarkGray;
             visibility: visible;
+            opacity: 1;
             @include transition(color .4s ease .2s);
             @include transition(visibility .4s ease .2s);
+            @include transition(opacity .2s ease .2s);
           }
           &.active, &:hover {
             &:before {
@@ -60,7 +62,9 @@
             }
             a {
               color: $colorBlack;
-              @include transition(color .4s ease);
+              @include transition(color .4s ease .2s);
+              @include transition(visibility .4s ease .2s);
+              @include transition(opacity .2s ease .2s);
             }
           }
         }
@@ -129,11 +133,13 @@
         list-style: none;
         width: 100%;
         float: left;
-        padding: 17px 0 12px 0;
+        padding: 17px 0;
         color: $colorDarkGray !important;
         text-align: center;
         position: relative;
         white-space: nowrap;
+        margin-top: 2px;
+        margin-bottom: 2px;
         &:before, &:after {
           content: '';
           @include absolute-center();
@@ -168,6 +174,10 @@
           line-height: 100%;
           text-decoration: none;
           text-transform: uppercase;
+          opacity: 0;
+          @include transition(color .4s ease .2s);
+          @include transition(visibility .4s ease .2s);
+          @include transition(opacity .2s ease .2s);
           &:hover {
             color: $colorBlack;
           }

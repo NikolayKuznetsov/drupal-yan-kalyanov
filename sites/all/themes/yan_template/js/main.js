@@ -56,10 +56,10 @@ $(document).ready(function () {
                 $('.menu-container ul.menu li').removeClass('active');
                 $('.menu-container ul.menu li:nth-child(2)').addClass('active');
             }
-            // if (come("#block-block-8")) {
-            //     $('.menu-container ul.menu li').removeClass('active');
-            //     $('.menu-container ul.menu li:nth-child(5)').addClass('active');
-            // }
+            if (come("#block-block-8")) {
+                $('.menu-container ul.menu li').removeClass('active');
+                $('.menu-container ul.menu li:nth-child(5)').addClass('active');
+            }
         });
         $('.view-slider-radio .view-content').slick({
             slidesToShow: 3,
