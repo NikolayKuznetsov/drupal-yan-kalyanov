@@ -1,11 +1,16 @@
 @import "color";
 @import "mixins/mixins";
 
+html {
+  height: 100%;
+}
+
 .front {
   #page {
     display: none;
   }
 }
+
 .block-menu {
   h2 {
     display: none;
@@ -534,6 +539,45 @@
     .icon {
       float: left;
       margin: 20px 0;
+    }
+  }
+}
+
+.not-logged-in.page-user {
+  .menu-container, .region-block-content {
+    display: none;
+  }
+  #block-system-main {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: $colorWhite;
+    z-index: 102;
+    .content {
+      width: 428px;
+      height: 336px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      label {
+        font-size: 21px;
+        line-height: 125%;
+        margin-bottom: 6px;
+      }
+      input {
+        max-width: 428px;
+        margin-bottom: 12px;
+        &.form-submit {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
     }
   }
 }

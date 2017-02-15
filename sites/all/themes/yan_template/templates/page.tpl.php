@@ -173,17 +173,6 @@ global $base_root; ?>
             </div>
             <div class="page-container">
 
-                <?php if ($page['block_header']) : ?>
-                    <!-- START block-1 -->
-                    <?php print render($page['block_header']); ?>
-                    <!-- END block-1 -->
-                <?php endif; ?>
-
-
-                <?php if ($page['block_content']) : ?>
-                    <?php print render($page['block_content']); ?>
-                <?php endif; ?>
-
                 <!-- #page -->
                 <div id="page" class="clearfix">
 
@@ -339,6 +328,17 @@ global $base_root; ?>
 
                 </div>
                 <!-- EOF:#page -->
+
+                <?php if ($page['block_header']) : ?>
+                    <!-- START block-1 -->
+                    <?php print render($page['block_header']); ?>
+                    <!-- END block-1 -->
+                <?php endif; ?>
+
+
+                <?php if ($page['block_content']) : ?>
+                    <?php print render($page['block_content']); ?>
+                <?php endif; ?>
 
             </div>
         </div>

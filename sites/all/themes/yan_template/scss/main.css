@@ -845,6 +845,9 @@ form .form-item {
   .slick-next:before {
     background-image: url("../images/icon-slider-next.png"); }
 
+html {
+  height: 100%; }
+
 .front #page {
   display: none; }
 
@@ -1372,6 +1375,37 @@ form .form-item {
   .block-2 .title-block .icon, .block-7 .title-block .icon, .block-8 .title-block .icon {
     float: left;
     margin: 20px 0; }
+
+.not-logged-in.page-user .menu-container, .not-logged-in.page-user .region-block-content {
+  display: none; }
+.not-logged-in.page-user #block-system-main {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #FFFFFF;
+  z-index: 102; }
+  .not-logged-in.page-user #block-system-main .content {
+    width: 428px;
+    height: 336px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+    .not-logged-in.page-user #block-system-main .content label {
+      font-size: 21px;
+      line-height: 125%;
+      margin-bottom: 6px; }
+    .not-logged-in.page-user #block-system-main .content input {
+      max-width: 428px;
+      margin-bottom: 12px; }
+      .not-logged-in.page-user #block-system-main .content input.form-submit {
+        margin-left: 0;
+        margin-right: 0; }
 
 .success_form_popup {
   position: fixed;
