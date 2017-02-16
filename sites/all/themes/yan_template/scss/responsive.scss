@@ -312,7 +312,7 @@
   .menu-container {
     width: 52px;
     .logo-container {
-      height: 150px;
+      height: 125px;
       .logo-min, .logo {
         top: 30px;
       }
@@ -640,6 +640,41 @@
         display: block;
       }
     }
+  }
+
+}
+
+@media (max-width: 860px) and (orientation: landscape) {
+  .region-general-menu {
+    height: 120px;
+    overflow: auto;
+  }
+  .menu-container {
+    ul {
+      &.menu {
+        li {
+          padding: 12px 0;
+          a {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+    &.open-menu {
+      .contact-menu {
+        height: 90px !important;
+        .phone {
+          font-size: 18px;
+          margin: 6px 0 !important;
+        }
+        ul.link-social {
+          margin: 0 auto !important;
+        }
+      }
+    }
+  }
+  .block-1 {
+    height: inherit;
   }
 
 }
