@@ -2,23 +2,28 @@
 @import "mixins/mixins";
 
 .btn-custom {
-  &, &:hover, &.active, &:active {
-    background-image: url("../images/button-bg.png");
-    width: 235px;
-    height: 107px;
-    font-size: 15px;
-    line-height: 100%;
-    padding: 26px 6px;
-    text-align: center;
-    text-transform: uppercase;
+  @include btn-linear-gradient(#2984BD, #0936F5);
+  width: 235px;
+  height: 66px;
+  font-size: 15px;
+  line-height: 100%;
+  padding: 26px 6px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $colorWhite;
+  @include border-radius(0px);
+  @include box-shadow(0, 0, 30px, rgba(9, 54, 245, .25));
+  &:hover, &.active, &:active {
+    @include btn-linear-gradient(#2881B8, #0830E4);
     color: $colorWhite;
-    @include box-shadow-none();
+    @include box-shadow(0, 0, 30px, rgba(9, 54, 245, .5));
   }
   &:focus {
     color: $colorWhite;
     outline: none;
   }
 }
+
 .button-down {
   background-image: url("../images/button-down.png");
   background-position: center bottom;

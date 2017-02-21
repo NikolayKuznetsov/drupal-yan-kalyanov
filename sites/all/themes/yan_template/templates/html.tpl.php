@@ -19,6 +19,15 @@
     <link rel="stylesheet" href="<?php print $base_root . $base_path . path_to_theme() ?>/js/pickadate/themes/default.date.css"/>
     <!-- .end picer date -->
 
+    <!-- start wow -->
+    <script src="<?php print $base_root . $base_path . path_to_theme() ?>/js/wow/wow.js"></script>
+    <link rel="stylesheet" href="<?php print $base_root . $base_path . path_to_theme() ?>/css/animate.css"/>
+    <!-- .end wow -->
+
+    <!-- start parallax -->
+    <script src="<?php print $base_root . $base_path . path_to_theme() ?>/js/parallax/parallax.js"></script>
+    <!-- .end parallax -->
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

@@ -7,7 +7,7 @@
 
         <?php print $content ?>
 
-        <div class="form">
+        <div class="form wow bounceInLeft" data-wow-duration="2s">
             <?php
             $block = block_load('webform', 'client-block-10');
             $block_content = _block_render_blocks(array($block));

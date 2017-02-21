@@ -8,7 +8,7 @@
             <div class="col-md-6 text-block">
                 <?php print $content ?>
             </div>
-            <div class="col-md-6 slider-block">
+            <div class="col-md-6 slider-block wow bounceInRight" data-wow-duration="2s">
                 <?php
                     echo views_embed_view('slider_radio', 'block');
                 ?>

@@ -6,11 +6,11 @@
     <div class="content"<?php print $content_attributes; ?>>
         <div class="row">
             <div class="col-md-5"></div>
-            <div class="col-md-7">
+            <div class="col-md-7 wow bounceInRight" data-wow-duration="2s">
                 <div class="contacts">
                     <?php
-                        $nameContact = check_plain(theme_get_setting('name_contact'));
-                        $descContact = check_markup(theme_get_setting('desc_contact')['value']);
+                    $nameContact = check_plain(theme_get_setting('name_contact'));
+                    $descContact = check_markup(theme_get_setting('desc_contact')['value']);
                     ?>
                     <?php if ($nameContact): ?>
                         <div class="name">

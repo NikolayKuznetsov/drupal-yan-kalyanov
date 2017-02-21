@@ -14,19 +14,23 @@ form {
       float: left;
     }
     &.submit, &.form-submit {
-      background-color: transparent;
-      background-image: url("../images/button-submit-bg.png");
+      @include btn-linear-gradient(#2984BD, #0936F5);
       border: none;
-      width: 428px;
-      height: 107px;
+      width: 396px;
+      height: 66px;
       font-size: 15px;
       line-height: 100%;
-      padding: 0 6px 40px 6px;
-      margin: 0 -16px;
       text-align: center;
       text-transform: uppercase;
       color: $colorWhite;
       outline: none;
+      @include border-radius(0px);
+      @include box-shadow(0, 0, 30px, rgba(9, 54, 245, .25));
+      &:hover, &.active, &:active {
+        @include btn-linear-gradient(#2881B8, #0830E4);
+        color: $colorWhite;
+        @include box-shadow(0, 0, 30px, rgba(9, 54, 245, .5));
+      }
     }
   }
   textarea {

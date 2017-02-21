@@ -180,7 +180,7 @@ html {
   background-repeat: no-repeat;
   background-position: left center;
   background-color: $colorWhiteSmokeBg;
-  min-height: 425px;
+  min-height: 423px;
   padding-top: 110px;
   overflow: hidden;
   position: relative;
@@ -497,14 +497,12 @@ html {
       justify-content: center;
       color: $colorBlack;
       @include border-radius(50%);
-    }
-    &:hover {
-      cursor: pointer;
-      .icon-block {
+      &:hover {
         background-color: $colorBlue;
         color: $colorWhite;
         width: 42px;
         height: 42px;
+        cursor: pointer;
       }
     }
   }
