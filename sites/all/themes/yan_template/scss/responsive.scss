@@ -22,25 +22,23 @@
     max-width: 550px;
   }
   .block-3, .block-5 {
-    &.animate-bg {
+    &:after {
+      top: -140px;
+      right: -10px;
+      width: 700px;
+      height: 700px;
+    }
+    &:before {
+      width: 1300px;
+      height: 1300px;
+      right: -250px;
+      top: -420px;
+    }
+    .content {
       &:after {
-        top: -140px;
-        right: -10px;
-        width: 700px;
-        height: 700px;
-      }
-      &:before {
-        width: 1300px;
-        height: 1300px;
-        right: -250px;
-        top: -420px;
-      }
-      .content {
-        &:after {
-          right: 144px;
-          width: 300px;
-          height: 300px;
-        }
+        right: 144px;
+        width: 300px;
+        height: 300px;
       }
     }
   }
@@ -216,12 +214,10 @@
   }
 
   .block-3, .block-5 {
-    &.animate-bg {
-      .content {
-        &:after {
-          opacity: 0;
-          visibility: hidden;
-        }
+    .content {
+      &:after {
+        opacity: 0;
+        visibility: hidden;
       }
     }
     .text-block, .slider-block {

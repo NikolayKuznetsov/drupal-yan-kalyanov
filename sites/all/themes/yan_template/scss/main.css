@@ -920,7 +920,7 @@ html {
 .block-menu h2 {
   display: none; }
 
-/* block ╨У╨╗╨░╨▓╨╜╨░╤П */
+/* block ╨ô╨╗╨░╨▓╨╜╨░╤Å */
 .block-1 {
   background-image: url("../images/block-1-bg.jpg");
   background-repeat: no-repeat;
@@ -951,7 +951,7 @@ html {
   .block-1 .group-arrow {
     margin-bottom: 50px; }
 
-/* block Who is ╨п╨╜ ╨Ъ╨░╨╗╤М╤П╨╜╨╛╨▓ */
+/* block Who is ╨»╨╜ ╨Ü╨░╨╗╤î╤Å╨╜╨╛╨▓ */
 .block-2 {
   background-image: url("../images/block-2-bg.jpg");
   background-repeat: no-repeat;
@@ -1053,7 +1053,7 @@ html {
             -o-transition: margin-top 0.4s ease;
             transition: margin-top 0.4s ease; }
 
-/* block ╨Т╨╡╨┤╤Г╤Й╨╕╨╣ Event-Fm */
+/* block ╨Æ╨╡╨┤╤â╤ë╨╕╨╣ Event-Fm */
 .block-3 .desc {
   margin-bottom: 70px; }
 .block-3 .slider-block .item-slide a:before {
@@ -1076,7 +1076,7 @@ html {
   -o-transform: scale(0.425);
   transform: scale(0.425); }
 
-/* block ╨Ш╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤А╨╛╨┐╤А╨╕╤П╤В╨╕╤П */
+/* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
 .block-4 {
   background-image: url("../images/block-4-bg.png");
   background-repeat: no-repeat;
@@ -1090,11 +1090,11 @@ html {
     margin-bottom: 50px;
     max-width: 510px; }
 
-/* block ╨г╤З╨░╤Б╤В╨╜╨╕╨║ ╨Ф╤Г╤Н╤В╨░ #EK_show */
+/* block ╨ú╤ç╨░╤ü╤é╨╜╨╕╨║ ╨ö╤â╤ì╤é╨░ #EK_show */
 .block-5 .desc {
   margin-bottom: 50px; }
 
-/* block ╨Ш╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤А╨╛╨┐╤А╨╕╤П╤В╨╕╤П */
+/* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
 .block-6 {
   background-image: url("../images/block-6-bg.jpg");
   background-repeat: no-repeat;
@@ -1278,7 +1278,7 @@ html {
     line-height: 24px;
     color: #000000; }
 
-/* block ╨Т╨╡╨┤╤Г╤Й╨╕╨╣ Event-Fm and ╨г╤З╨░╤Б╤В╨╜╨╕╨║ ╨Ф╤Г╤Н╤В╨░ #EK_show */
+/* block ╨Æ╨╡╨┤╤â╤ë╨╕╨╣ Event-Fm and ╨ú╤ç╨░╤ü╤é╨╜╨╕╨║ ╨ö╤â╤ì╤é╨░ #EK_show */
 .block-3, .block-5 {
   background-color: #F3F3F3;
   min-height: 505px;
@@ -1297,24 +1297,26 @@ html {
     border-radius: 50%; }
   .block-3:after, .block-5:after {
     background-color: #E0E0E0;
-    width: 400px;
-    height: 400px;
-    right: 250px;
-    top: -90px;
-    opacity: .6;
-    -webkit-transition: all 10.4s ease;
-    -khtml-transition: all 10.4s ease;
-    -moz-transition: all 10.4s ease;
-    -ms-transition: all 10.4s ease;
-    -o-transition: all 10.4s ease;
-    transition: all 10.4s ease; }
+    width: 870px;
+    height: 870px;
+    right: 115px;
+    top: -180px;
+    opacity: .7;
+    transform: scale(0.25);
+    -webkit-transition: all 3s ease;
+    -khtml-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease; }
   .block-3:before, .block-5:before {
     background-color: #EBEBEB;
-    width: 700px;
-    height: 700px;
-    right: 110px;
-    top: -236px;
+    width: 1520px;
+    height: 1520px;
+    right: -250px;
+    top: -470px;
     opacity: .7;
+    transform: scale(0.25);
     -webkit-transition: all 3s ease;
     -khtml-transition: all 3s ease;
     -moz-transition: all 3s ease;
@@ -1322,11 +1324,7 @@ html {
     -o-transition: all 3s ease;
     transition: all 3s ease; }
   .block-3.animate-bg:after, .block-5.animate-bg:after {
-    width: 870px;
-    height: 870px;
-    right: 115px;
-    top: -180px;
-    opacity: 1;
+    transform: scale(1);
     -webkit-transition: all 3s ease;
     -khtml-transition: all 3s ease;
     -moz-transition: all 3s ease;
@@ -1334,11 +1332,7 @@ html {
     -o-transition: all 3s ease;
     transition: all 3s ease; }
   .block-3.animate-bg:before, .block-5.animate-bg:before {
-    width: 1520px;
-    height: 1520px;
-    right: -250px;
-    top: -470px;
-    opacity: 1;
+    transform: scale(1);
     -webkit-transition: all 3s ease;
     -khtml-transition: all 3s ease;
     -moz-transition: all 3s ease;
@@ -1346,9 +1340,7 @@ html {
     -o-transition: all 3s ease;
     transition: all 3s ease; }
   .block-3.animate-bg .content:after, .block-5.animate-bg .content:after {
-    width: 368px;
-    height: 368px;
-    opacity: 1;
+    transform: scale(1);
     -webkit-transition: all 3s ease;
     -khtml-transition: all 3s ease;
     -moz-transition: all 3s ease;
@@ -1363,12 +1355,13 @@ html {
       content: '';
       position: absolute;
       display: block;
-      width: 180px;
-      height: 180px;
+      width: 368px;
+      height: 368px;
+      opacity: .7;
       right: 364px;
       top: -64px;
       z-index: -1;
-      opacity: .5;
+      transform: scale(0.25);
       -webkit-border-radius: 50%;
       -khtml-border-radius: 50%;
       -moz-border-radius: 50%;

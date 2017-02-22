@@ -13,17 +13,17 @@
   .slick-slider {
     max-width: 550px; }
 
-  .block-3.animate-bg:after, .block-5.animate-bg:after {
+  .block-3:after, .block-5:after {
     top: -140px;
     right: -10px;
     width: 700px;
     height: 700px; }
-  .block-3.animate-bg:before, .block-5.animate-bg:before {
+  .block-3:before, .block-5:before {
     width: 1300px;
     height: 1300px;
     right: -250px;
     top: -420px; }
-  .block-3.animate-bg .content:after, .block-5.animate-bg .content:after {
+  .block-3 .content:after, .block-5 .content:after {
     right: 144px;
     width: 300px;
     height: 300px; }
@@ -136,7 +136,7 @@
   .block-2 .title-block, .block-7 .title-block, .block-8 .title-block {
     width: 80%; }
 
-  .block-3.animate-bg .content:after, .block-5.animate-bg .content:after {
+  .block-3 .content:after, .block-5 .content:after {
     opacity: 0;
     visibility: hidden; }
   .block-3 .text-block, .block-3 .slider-block, .block-5 .text-block, .block-5 .slider-block {
