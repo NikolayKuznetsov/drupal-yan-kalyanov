@@ -1303,12 +1303,12 @@ html {
     top: -180px;
     opacity: .7;
     transform: scale(0.25);
-    -webkit-transition: all 3s ease;
-    -khtml-transition: all 3s ease;
-    -moz-transition: all 3s ease;
-    -ms-transition: all 3s ease;
-    -o-transition: all 3s ease;
-    transition: all 3s ease; }
+    -webkit-transition: transform 3s ease;
+    -khtml-transition: transform 3s ease;
+    -moz-transition: transform 3s ease;
+    -ms-transition: transform 3s ease;
+    -o-transition: transform 3s ease;
+    transition: transform 3s ease; }
   .block-3:before, .block-5:before {
     background-color: #EBEBEB;
     width: 1520px;
@@ -1317,36 +1317,36 @@ html {
     top: -470px;
     opacity: .7;
     transform: scale(0.25);
-    -webkit-transition: all 3s ease;
-    -khtml-transition: all 3s ease;
-    -moz-transition: all 3s ease;
-    -ms-transition: all 3s ease;
-    -o-transition: all 3s ease;
-    transition: all 3s ease; }
+    -webkit-transition: transform 3s ease;
+    -khtml-transition: transform 3s ease;
+    -moz-transition: transform 3s ease;
+    -ms-transition: transform 3s ease;
+    -o-transition: transform 3s ease;
+    transition: transform 3s ease; }
   .block-3.animate-bg:after, .block-5.animate-bg:after {
     transform: scale(1);
-    -webkit-transition: all 3s ease;
-    -khtml-transition: all 3s ease;
-    -moz-transition: all 3s ease;
-    -ms-transition: all 3s ease;
-    -o-transition: all 3s ease;
-    transition: all 3s ease; }
+    -webkit-transition: transform 3s ease;
+    -khtml-transition: transform 3s ease;
+    -moz-transition: transform 3s ease;
+    -ms-transition: transform 3s ease;
+    -o-transition: transform 3s ease;
+    transition: transform 3s ease; }
   .block-3.animate-bg:before, .block-5.animate-bg:before {
     transform: scale(1);
-    -webkit-transition: all 3s ease;
-    -khtml-transition: all 3s ease;
-    -moz-transition: all 3s ease;
-    -ms-transition: all 3s ease;
-    -o-transition: all 3s ease;
-    transition: all 3s ease; }
+    -webkit-transition: transform 3s ease;
+    -khtml-transition: transform 3s ease;
+    -moz-transition: transform 3s ease;
+    -ms-transition: transform 3s ease;
+    -o-transition: transform 3s ease;
+    transition: transform 3s ease; }
   .block-3.animate-bg .content:after, .block-5.animate-bg .content:after {
     transform: scale(1);
-    -webkit-transition: all 3s ease;
-    -khtml-transition: all 3s ease;
-    -moz-transition: all 3s ease;
-    -ms-transition: all 3s ease;
-    -o-transition: all 3s ease;
-    transition: all 3s ease; }
+    -webkit-transition: transform 3s ease;
+    -khtml-transition: transform 3s ease;
+    -moz-transition: transform 3s ease;
+    -ms-transition: transform 3s ease;
+    -o-transition: transform 3s ease;
+    transition: transform 3s ease; }
   .block-3 .content, .block-5 .content {
     position: relative;
     z-index: 1; }

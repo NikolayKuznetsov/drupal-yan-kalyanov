@@ -415,7 +415,7 @@ html {
     top: -180px;
     opacity: .7;
     transform: scale(.25);
-    @include transition(all 3s ease);
+    @include transition(transform 3s ease);
   }
   &:before {
     background-color: $colorWhisper;
@@ -425,22 +425,22 @@ html {
     top: -470px;
     opacity: .7;
     transform: scale(.25);
-    @include transition(all 3s ease);
+    @include transition(transform 3s ease);
   }
 
   &.animate-bg {
     &:after {
       transform: scale(1);
-      @include transition(all 3s ease);
+      @include transition(transform 3s ease);
     }
     &:before {
       transform: scale(1);
-      @include transition(all 3s ease);
+      @include transition(transform 3s ease);
     }
     .content {
       &:after {
         transform: scale(1);
-        @include transition(all 3s ease);
+        @include transition(transform 3s ease);
       }
     }
   }
