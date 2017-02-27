@@ -4,6 +4,12 @@
     <?php print render($title_suffix); ?>
 
     <div class="content"<?php print $content_attributes; ?>>
+        <div class="title-block wow bounceInRight" data-wow-duration="2s">
+            <span>Контакты</span>
+            <i class="icon icon-arrow-blue-right"></i>
+            <i class="icon icon-arrow-blue-right"></i>
+            <i class="icon icon-arrow-blue-right"></i>
+        </div>
         <div class="row">
             <div class="col-md-5"></div>
             <div class="col-md-7 wow bounceInRight" data-wow-duration="2s">

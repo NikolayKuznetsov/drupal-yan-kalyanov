@@ -920,7 +920,7 @@ html {
 .block-menu h2 {
   display: none; }
 
-/* block ╨ô╨╗╨░╨▓╨╜╨░╤Å */
+/* block ╨У╨╗╨░╨▓╨╜╨░╤П */
 .block-1 {
   background-image: url("../images/block-1-bg.jpg");
   background-repeat: no-repeat;
@@ -951,7 +951,7 @@ html {
   .block-1 .group-arrow {
     margin-bottom: 50px; }
 
-/* block Who is ╨»╨╜ ╨Ü╨░╨╗╤î╤Å╨╜╨╛╨▓ */
+/* block Who is ╨п╨╜ ╨Ъ╨░╨╗╤М╤П╨╜╨╛╨▓ */
 .block-2 {
   background-image: url("../images/block-2-bg.jpg");
   background-repeat: no-repeat;
@@ -1053,7 +1053,7 @@ html {
             -o-transition: margin-top 0.4s ease;
             transition: margin-top 0.4s ease; }
 
-/* block ╨Æ╨╡╨┤╤â╤ë╨╕╨╣ Event-Fm */
+/* block ╨Т╨╡╨┤╤Г╤Й╨╕╨╣ Event-Fm */
 .block-3 .desc {
   margin-bottom: 70px; }
 .block-3 .slider-block .item-slide a:before {
@@ -1076,7 +1076,7 @@ html {
   -o-transform: scale(0.425);
   transform: scale(0.425); }
 
-/* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
+/* block ╨Ш╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤А╨╛╨┐╤А╨╕╤П╤В╨╕╤П */
 .block-4 {
   background-image: url("../images/block-4-bg.png");
   background-repeat: no-repeat;
@@ -1090,11 +1090,11 @@ html {
     margin-bottom: 50px;
     max-width: 510px; }
 
-/* block ╨ú╤ç╨░╤ü╤é╨╜╨╕╨║ ╨ö╤â╤ì╤é╨░ #EK_show */
+/* block ╨г╤З╨░╤Б╤В╨╜╨╕╨║ ╨Ф╤Г╤Н╤В╨░ #EK_show */
 .block-5 .desc {
   margin-bottom: 50px; }
 
-/* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
+/* block ╨Ш╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤А╨╛╨┐╤А╨╕╤П╤В╨╕╤П */
 .block-6 {
   background-image: url("../images/block-6-bg.jpg");
   background-repeat: no-repeat;
@@ -1134,6 +1134,8 @@ html {
       max-width: 400px; }
   .block-7 .form, .block-7 .desc {
     padding-left: 230px; }
+  .block-7 .form .messages.error {
+    display: none; }
   .block-7 .form h2 {
     display: none; }
   .block-7 .form .field-item {
@@ -1237,7 +1239,7 @@ html {
         justify-content: center;
         width: 32px;
         height: 32px;
-        font-size: 13px;
+        font-size: 14px;
         text-align: center;
         line-height: 32px;
         color: #FFFFFF;
@@ -1278,7 +1280,7 @@ html {
     line-height: 24px;
     color: #000000; }
 
-/* block ╨Æ╨╡╨┤╤â╤ë╨╕╨╣ Event-Fm and ╨ú╤ç╨░╤ü╤é╨╜╨╕╨║ ╨ö╤â╤ì╤é╨░ #EK_show */
+/* block ╨Т╨╡╨┤╤Г╤Й╨╕╨╣ Event-Fm and ╨г╤З╨░╤Б╤В╨╜╨╕╨║ ╨Ф╤Г╤Н╤В╨░ #EK_show */
 .block-3, .block-5 {
   background-color: #F3F3F3;
   min-height: 505px;

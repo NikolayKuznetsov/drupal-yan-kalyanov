@@ -1,3 +1,17 @@
+$(document).mouseup(function (e) {
+    var containerPopupContent = $('.container-popup-content');
+    if (!containerPopupContent.is(e.target) && containerPopupContent.has(e.target).length === 0) {
+        $('.container-popup').removeClass('open');
+    }
+});
+
+$(document).keyup(function (e) {
+    if (e.keyCode === 27) {
+        $('.container-popup').removeClass('open');
+    }
+});
+
+
 $(document).ready(function () {
 
     var _href = '';
@@ -175,7 +189,20 @@ var wow = new WOW(
 );
 wow.init();
 
-$('.block-1').stellar();
-$('.block-2').stellar();
-$('.block-3').stellar();
-$('.block-4').stellar();
+//$('.block-1').stellar();
+//$('.block-2').stellar();
+//$('.block-3').stellar();
+//$('.block-4').stellar();
+
+//$(window).bind('scroll',function(e){
+    //parallaxScroll();
+//});
+
+function parallaxScroll(){
+    var scrolled = $(window).scrollTop();
+    //$('#block-block-2').css('top',(0-(scrolled*.25))+'px');
+    //$('#block-block-3').css('top',(0-(scrolled*.5))+'px');
+    //$('#block-block-3').css('top',(0-(scrolled*.5))+'px');
+    //$('#parallax-bg2').css('top',(0-(scrolled*.5))+'px');
+    //$('#parallax-bg3').css('top',(0-(scrolled*.75))+'px');
+}
