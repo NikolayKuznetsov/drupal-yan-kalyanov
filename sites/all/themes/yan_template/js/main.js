@@ -116,20 +116,28 @@ $(document).ready(function () {
     function eventDatePicka() {
         var elementNameDatePicker = $('#edit-submitted-data');
 
-        elementNameDatePicker.pickadate({
-            monthsFull: ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'],
-            monthsShort: ['янв', 'фев', 'мар', 'апр', 'май', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'],
-            weekdaysFull: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
-            weekdaysShort: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],
-            today: 'сегодня',
-            clear: 'удалить',
-            close: 'закрыть',
-            firstDay: 1,
-            format: 'dd.mm.yyyy',
-            formatSubmit: 'dd.mm.yyyy',
-            closeOnSelect: true,
-            closeOnClear: false,
-            selectMonths: true
+        //elementNameDatePicker.pickadate({
+        //    monthsFull: ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'],
+        //    monthsShort: ['янв', 'фев', 'мар', 'апр', 'май', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'],
+        //    weekdaysFull: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+        //    weekdaysShort: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],
+        //    today: 'сегодня',
+        //    clear: 'удалить',
+        //    close: 'закрыть',
+        //    firstDay: 1,
+        //    format: 'dd.mm.yyyy',
+        //    formatSubmit: 'dd.mm.yyyy',
+        //    closeOnSelect: true,
+        //    closeOnClear: false,
+        //    selectMonths: true
+        //});
+
+        elementNameDatePicker.datepicker({
+            monthNames: ['Январь', 'Февраль', 'Март', 'Апрель',
+                'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
+                'Октябрь', 'Ноябрь', 'Декабрь'],
+            dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+            firstDay: 1
         });
     }
 
@@ -195,10 +203,10 @@ wow.init();
 //$('.block-4').stellar();
 
 //$(window).bind('scroll',function(e){
-    //parallaxScroll();
+//parallaxScroll();
 //});
 
-function parallaxScroll(){
+function parallaxScroll() {
     var scrolled = $(window).scrollTop();
     //$('#block-block-2').css('top',(0-(scrolled*.25))+'px');
     //$('#block-block-3').css('top',(0-(scrolled*.5))+'px');

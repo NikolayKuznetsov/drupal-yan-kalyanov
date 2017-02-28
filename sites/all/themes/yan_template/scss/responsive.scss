@@ -98,6 +98,15 @@
     padding-left: 115px;
   }
 
+  .block-3, .block-5 {
+    &:before {
+      width: 1100px;
+      height: 1100px;
+      right: -230px;
+      top: -400px;
+    }
+  }
+
   .block-7 {
     background-position: 25% center;
     min-height: inherit;
@@ -112,6 +121,7 @@
   }
 
   .block-8 {
+    background-position: 5% center;
     min-height: inherit;
     height: 100vh;
     .title-block {

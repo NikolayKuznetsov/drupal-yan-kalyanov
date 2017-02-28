@@ -12,12 +12,9 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <?php global $base_path; global $base_root; ?>
 
-    <!-- start picer date -->
-    <script src="<?php print $base_root . $base_path . path_to_theme() ?>/js/pickadate/picker.js"></script>
-    <script src="<?php print $base_root . $base_path . path_to_theme() ?>/js/pickadate/picker.date.js"></script>
-    <link rel="stylesheet" href="<?php print $base_root . $base_path . path_to_theme() ?>/js/pickadate/themes/default.css"/>
-    <link rel="stylesheet" href="<?php print $base_root . $base_path . path_to_theme() ?>/js/pickadate/themes/default.date.css"/>
-    <!-- .end picer date -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- start wow -->
     <script src="<?php print $base_root . $base_path . path_to_theme() ?>/js/wow/wow.js"></script>

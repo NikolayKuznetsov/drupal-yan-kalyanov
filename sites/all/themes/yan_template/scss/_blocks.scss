@@ -138,13 +138,40 @@ html {
       a {
         &:before {
           content: '';
-          background-image: url("../images/icon-slider-btn-play.png");
-          width: 153px;
-          height: 153px;
+          background-image: url("../images/icon-btn-play.png");
+          background-size: 46px 46px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          width: 86px;
+          height: 86px;
           display: block;
+          border: 20px solid rgba(222, 222, 222, 0);
           z-index: 2;
+          @include border-radius(50%);
           @include absolute-center();
           @include transform(scale(.425));
+          @include transition(all .4s ease);
+        }
+        &:after {
+          content: '';
+          background-color: rgba(232, 232, 232, 0);
+          width: 153px;
+          height: 153px;
+          z-index: 1;
+          @include border-radius(50%);
+          @include absolute-center();
+          @include transform(scale(.425));
+          @include transition(all .4s ease);
+        }
+        &:hover {
+          &:after {
+            background-color: rgba(232, 232, 232, .13);
+            @include transition(all .4s ease);
+          }
+          &:before {
+            border: 20px solid rgba(222, 222, 222, .23);
+            @include transition(all .4s ease);
+          }
         }
       }
     }
