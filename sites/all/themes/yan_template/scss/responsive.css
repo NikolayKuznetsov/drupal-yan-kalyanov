@@ -30,9 +30,13 @@
 
   .block-2 {
     background-position: 50% center; }
+    .block-2:after {
+      background-position: 50% center; }
 
   .block-4, .block-6 {
     background-position: -50% center; }
+    .block-4:after, .block-6:after {
+      background-position: -50% center; }
 
   .block-7 {
     background-position: 0 center; }
@@ -118,7 +122,9 @@
     width: 65%; }
 
   .block-4, .block-6 {
-    background-position: -75% center; } }
+    background-position: -75% center; }
+    .block-4:after, .block-6:after {
+      background-position: -75% center; } }
 @media (max-width: 1024px) {
   .block-1 {
     background-position: 70% center; }
@@ -128,9 +134,13 @@
 
   .block-4 {
     background-position: -420px center; }
+    .block-4:after {
+      background-position: -420px center; }
 
   .block-6 {
     background-position: -200px center; }
+    .block-6:after {
+      background-position: -200px center; }
 
   .block-7 {
     background-position: 35% center; }
@@ -170,9 +180,13 @@
 @media (max-width: 960px) {
   .block-4 {
     background-position: -550px center; }
+    .block-4:after {
+      background-position: -550px center; }
 
   .block-6 {
     background-position: -260px center; }
+    .block-6:after {
+      background-position: -260px center; }
 
   .block-4 .row .col-md-6:first-child, .block-6 .row .col-md-6:first-child {
     display: none; }

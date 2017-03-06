@@ -21,8 +21,9 @@
     <link rel="stylesheet" href="<?php print $base_root . $base_path . path_to_theme() ?>/css/animate.css"/>
     <!-- .end wow -->
 
+    <script src="<?php print $base_root . $base_path . path_to_theme() ?>/js/jquery.viewportChecker.js"></script>
     <!-- start parallax -->
-    <script src="<?php print $base_root . $base_path . path_to_theme() ?>/js/parallax/parallax.js"></script>
+<!--    <script src="--><?php //print $base_root . $base_path . path_to_theme() ?><!--/js/parallax/parallax.js"></script>-->
     <!-- .end parallax -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

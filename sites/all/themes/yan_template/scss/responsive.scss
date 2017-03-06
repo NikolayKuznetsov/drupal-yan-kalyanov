@@ -45,10 +45,16 @@
 
   .block-2 {
     background-position: 50% center;
+    &:after {
+      background-position: 50% center;
+    }
   }
 
   .block-4, .block-6 {
     background-position: -50% center;
+    &:after {
+      background-position: -50% center;
+    }
   }
 
   .block-7 {
@@ -181,6 +187,9 @@
 
   .block-4, .block-6 {
     background-position: -75% center;
+    &:after {
+      background-position: -75% center;
+    }
   }
 
 }
@@ -201,10 +210,16 @@
 
   .block-4 {
     background-position: -420px center;
+    &:after {
+      background-position: -420px center;
+    }
   }
 
   .block-6 {
     background-position: -200px center;
+    &:after {
+      background-position: -200px center;
+    }
   }
 
   .block-7 {
@@ -272,9 +287,15 @@
 @media (max-width: 960px) {
   .block-4 {
     background-position: -550px center;
+    &:after {
+      background-position: -550px center;
+    }
   }
   .block-6 {
     background-position: -260px center;
+    &:after {
+      background-position: -260px center;
+    }
   }
   .block-4, .block-6 {
     .row {
