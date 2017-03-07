@@ -40,6 +40,8 @@
 
   .block-7 {
     background-position: 0 center; }
+    .block-7:after {
+      background-position: 0 center; }
 
   .block-8 {
     background-position: 25% center; } }
@@ -79,6 +81,8 @@
     background-position: 25% center;
     min-height: inherit;
     height: 100vh; }
+    .block-7:after {
+      background-position: 25% center; }
     .block-7 .title-block, .block-7 .form, .block-7 .desc {
       padding-left: 115px; }
     .block-7 .desc {
@@ -109,6 +113,8 @@
 
   .block-7 {
     background-position: 40% center; }
+    .block-7:after {
+      background-position: 40% center; }
     .block-7 .title-block, .block-7 .form, .block-7 .desc {
       padding-left: 65px; }
 
@@ -144,6 +150,8 @@
 
   .block-7 {
     background-position: 35% center; }
+    .block-7:after {
+      background-position: 35% center; }
 
   .block-1, .block-3, .block-4, .block-5, .block-6 {
     padding-left: 24px;

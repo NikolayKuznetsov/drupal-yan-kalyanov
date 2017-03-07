@@ -29,6 +29,11 @@ $(document).ready(function () {
         offset: 100
     });
 
+    $('.block-7').viewportChecker({
+        classToAdd: 'my-animation',
+        offset: 100
+    });
+
     var _href = '';
     if ($('body').hasClass('front')) {
         _href = $('ul.menu li:nth-child(1) a').attr('href');
