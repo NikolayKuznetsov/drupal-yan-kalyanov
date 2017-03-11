@@ -1104,12 +1104,12 @@ html {
   -ms-transform: scale(0.425);
   -o-transform: scale(0.425);
   transform: scale(0.425);
-  -webkit-transition: all 0.5s ease;
-  -khtml-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  -webkit-transition: all 0.4s ease;
+  -khtml-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
 .block-3 .slider-block .item-slide a:after {
   content: '';
   background-color: rgba(232, 232, 232, 0);
@@ -1128,40 +1128,34 @@ html {
   top: 0;
   bottom: 0;
   margin: auto;
-  -webkit-transform: scale(0);
-  -khtml-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all 0.5s ease;
-  -khtml-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-.block-3 .slider-block .item-slide a:hover:after {
-  background-color: rgba(232, 232, 232, 0.13);
   -webkit-transform: scale(0.425);
   -khtml-transform: scale(0.425);
   -moz-transform: scale(0.425);
   -ms-transform: scale(0.425);
   -o-transform: scale(0.425);
   transform: scale(0.425);
-  -webkit-transition: all 0.5s ease;
-  -khtml-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  -webkit-transition: all 0.4s ease;
+  -khtml-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+.block-3 .slider-block .item-slide a:hover:after {
+  background-color: rgba(232, 232, 232, 0.13);
+  -webkit-transition: all 0.4s ease;
+  -khtml-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
 .block-3 .slider-block .item-slide a:hover:before {
   border: 20px solid rgba(222, 222, 222, 0.23);
-  -webkit-transition: all 0.5s ease;
-  -khtml-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  -webkit-transition: all 0.4s ease;
+  -khtml-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
 
 /* block ╨ÿ╨┤╨╡╨╕ ╨╜╨░ ╨╝╨╡╤Ç╨╛╨┐╤Ç╨╕╤Å╤é╨╕╤Å */
 .block-4 {
@@ -1172,7 +1166,7 @@ html {
   .block-4:after {
     content: '';
     position: absolute;
-    background-image: url("../images/block-4-bg.png");
+    background-image: url("../images/block-4-bg-full.png");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
@@ -1185,10 +1179,28 @@ html {
     z-index: 2;
     transform: scale(1.25);
     transition: transform ease 10s; }
+  .block-4:before {
+    content: '';
+    position: absolute;
+    background-image: url("../images/block-4-bg-area-block.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 30%;
+    visibility: visible;
+    z-index: 3; }
   .block-4.animate-bg:after, .block-4.my-animation:after {
     transform: scale(1);
     transition: transform ease 10s; }
+  .block-4.animate-bg:before, .block-4.my-animation:before {
+    left: 45%;
+    transition: left ease 2s; }
   .block-4 .content {
+    position: relative;
     z-index: 4; }
   .block-4 .desc {
     margin-bottom: 50px;
@@ -1208,7 +1220,7 @@ html {
   .block-6:after {
     content: '';
     position: absolute;
-    background-image: url("../images/block-6-bg.jpg");
+    background-image: url("../images/block-6-bg-full.png");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: contain;
@@ -1221,36 +1233,40 @@ html {
     z-index: 2;
     transform: scale(1.25);
     transition: transform ease 10s; }
-  .block-6.animate-bg:after, .block-6.my-animation:after {
-    transform: scale(1);
-    transition: transform ease 10s; }
-  .block-6 .desc {
-    max-width: 510px; }
-
-.block-7 {
-  background-color: #161616;
-  min-height: 768px;
-  position: relative;
-  overflow: hidden; }
-  .block-7:after {
+  .block-6:before {
     content: '';
     position: absolute;
-    background-image: url("../images/block-7-bg.jpg");
+    background-image: url("../images/block-6-bg-area-block.png");
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     height: 100%;
     display: block;
     top: 0;
-    left: 0;
+    left: 30%;
     visibility: visible;
-    z-index: 2;
-    transform: scale(1.25);
-    transition: transform ease 10s; }
-  .block-7.animate-bg:after, .block-7.my-animation:after {
+    z-index: 3; }
+  .block-6.animate-bg:after, .block-6.my-animation:after {
     transform: scale(1);
     transition: transform ease 10s; }
+  .block-6.animate-bg:before, .block-6.my-animation:before {
+    left: 45%;
+    transition: left ease 2s; }
+  .block-6 .content {
+    position: relative;
+    z-index: 4; }
+  .block-6 .desc {
+    max-width: 510px; }
+
+.block-7 {
+  background-image: url("../images/block-7-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  background-color: #161616;
+  min-height: 768px;
+  position: relative; }
   .block-7 .title-block {
     padding-left: 230px;
     padding-right: 46px;
@@ -1258,9 +1274,6 @@ html {
     float: left !important; }
     .block-7 .title-block .icon {
       float: right; }
-  .block-7 .content {
-    z-index: 3;
-    position: relative; }
   .block-7 .desc {
     font-size: 16px;
     line-height: 24px;
