@@ -1128,12 +1128,12 @@ html {
   top: 0;
   bottom: 0;
   margin: auto;
-  -webkit-transform: scale(0.425);
-  -khtml-transform: scale(0.425);
-  -moz-transform: scale(0.425);
-  -ms-transform: scale(0.425);
-  -o-transform: scale(0.425);
-  transform: scale(0.425);
+  -webkit-transform: scale(0);
+  -khtml-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
   -webkit-transition: all 0.4s ease;
   -khtml-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -1142,6 +1142,12 @@ html {
   transition: all 0.4s ease; }
 .block-3 .slider-block .item-slide a:hover:after {
   background-color: rgba(232, 232, 232, 0.13);
+  -webkit-transform: scale(0.425);
+  -khtml-transform: scale(0.425);
+  -moz-transform: scale(0.425);
+  -ms-transform: scale(0.425);
+  -o-transform: scale(0.425);
+  transform: scale(0.425);
   -webkit-transition: all 0.4s ease;
   -khtml-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -1260,13 +1266,29 @@ html {
     max-width: 510px; }
 
 .block-7 {
-  background-image: url("../images/block-7-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: cover;
   background-color: #161616;
   min-height: 768px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  .block-7:after {
+    content: '';
+    position: absolute;
+    background-image: url("../images/block-7-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    z-index: 2;
+    transform: scale(1.25);
+    transition: transform ease 10s; }
+  .block-7.animate-bg:after, .block-7.my-animation:after {
+    transform: scale(1);
+    transition: transform ease 10s; }
   .block-7 .title-block {
     padding-left: 230px;
     padding-right: 46px;
@@ -1274,6 +1296,9 @@ html {
     float: left !important; }
     .block-7 .title-block .icon {
       float: right; }
+  .block-7 .content {
+    z-index: 3;
+    position: relative; }
   .block-7 .desc {
     font-size: 16px;
     line-height: 24px;
